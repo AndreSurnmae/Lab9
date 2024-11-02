@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Lab 9 - Interactice Photo Gallery</title>
+  </head>
+  <body>
+    <div class="main-section">
+      <header class="title-header">
+        <h1>Interactive Photo Gallery</h1>
+      </header>
+      <div class="main-content">
+        <h1>Gallery</h1>
+        <p>Insert a quote about photography here: snap</p>
+        <button class="main-btn">
+          <a href="#gallery-sc"> Browse Pictures </a>
+        </button>
+      </div>
+    </div>
+
+    <div class="gallery-section" id="gallery-sc">
+      <h1>Ki'i Gallery</h1>
+      <div class="gallery-btn-filter">
+        <button class="btn active" data-filter="All">All</button>
+        <button class="btn" data-filter="nature">Nature</button>
+        <button class="btn" data-filter="insect">Insect</button>
+        <button class="btn" data-filter="nightLife">Night Life</button>
+        <button class="btn" data-filter="nightSky">Night Sky</button>
+      </div>
+
+      <div class="gallery-flexbox">
+        <div class="card nightLife">
+          <div class="container">
+            <img class="img" src="images/night_life/nightlife1.jpg" alt="" />
+            <p>Hokkaido Night Life</p>
+          </div>
+        </div>
+
+        <div class="card nature">
+          <div class="container">
+            <img class="img" src="images/nature/nature2.jpg" alt="" />
+            <p>Islands</p>
+          </div>
+        </div>
+
+        <div class="card insect">
+          <div class="container">
+            <img
+              class="img"
+              src="images/insect/26.-The-Beauty-of-Bees-Close-Up-Photography.jpg"
+              alt=""
+            />
+            <p>Bee</p>
+          </div>
+        </div>
+
+        <div class="card nature">
+          <div class="container">
+            <img class="img" src="images/nature/nature1.jpg" alt="" />
+            <p>Ocean View</p>
+          </div>
+        </div>
+
+        <div class="card nightSky">
+          <div class="container">
+            <img class="img" src="images/night_sky/nightsky1.jpg" alt="" />
+            <p>Starry Night Sky</p>
+          </div>
+        </div>
+
+        <div class="card nightLife">
+          <div class="container">
+            <img class="img" src="images/night_life/nightlife2.jpg" alt="" />
+            <p>Tokyo Night Life</p>
+          </div>
+        </div>
+
+        <div class="card insect">
+          <div class="container">
+            <img class="img" src="images/insect/dragonfly2.jpg" alt="" />
+            <p>Dragonfly</p>
+          </div>
+        </div>
+
+        <div class="card insect">
+          <div class="container">
+            <img class="img" src="images/insect/insect3.jpg" alt="" />
+            <p>Black Widow</p>
+          </div>
+        </div>
+
+        <div class="card nature">
+          <div class="container">
+            <img class="img" src="images/nature/nature4.jpg" alt="" />
+            <p>Snowy Nature</p>
+          </div>
+        </div>
+
+        <div class="card nature">
+          <div class="container">
+            <img class="img" src="images/nature/nature3.jpg" alt="" />
+            <p>Rice Terrace</p>
+          </div>
+        </div>
+
+        <div class="card nightSky">
+          <div class="container">
+            <img class="img" src="images/night_sky/nightsky2.jpg" alt="" />
+            <p>Star Trails</p>
+          </div>
+        </div>
+
+        <div class="card nightSky">
+          <div class="container">
+            <img class="img" src="images/night_sky/nightsky3.jpg" alt="" />
+            <p>Northern Lights</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightboxImage" />
+      <div class="caption" id="lightboxCaption"></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
